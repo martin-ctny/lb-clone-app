@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/api/posts/";
+const API_URL = `${process.env.REACT_APP_API_URL}/posts/`;
 
 const getPosts = async (post) => {
   if (post) {
